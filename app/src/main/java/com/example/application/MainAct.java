@@ -33,6 +33,14 @@ public class MainAct extends AppCompatActivity {
                 startActivity(new Intent(MainAct.this, Feel.class));
             }
         });
+        ImageView btnSettings = findViewById(R.id.btnsettings);
+        btnSettings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainAct.this, Settings.class));
+            }
+        });
+
         backgroundMusicIntent = new Intent(this, BackgroundMusicService.class);
         startService(backgroundMusicIntent);
     }

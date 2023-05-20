@@ -81,51 +81,64 @@ public class Combo extends AppCompatActivity {
     private void setEmote(String emote) {
         ImageView emoteImageView = findViewById(R.id.emote);
         TextView emoteTextView = findViewById(R.id.emoteText);
+        TextView quoteTextView = findViewById(R.id.quote);
+
         if (emote != null) {
             switch (emote) {
                 case "Shy":
                     emoteImageView.setImageResource(R.drawable.sh);
                     emoteTextView.setText("Shy");
+                    quoteTextView.setText(getString(R.string.shy_quote));
                     break;
                 case "Happy":
                     emoteImageView.setImageResource(R.drawable.hap);
                     emoteTextView.setText("Happy");
+                    quoteTextView.setText(getString(R.string.happy_quote));
                     break;
                 case "Sad":
                     emoteImageView.setImageResource(R.drawable.sdy);
                     emoteTextView.setText("Sad");
+                    quoteTextView.setText(getString(R.string.sad_quote));
                     break;
                 case "Calm":
                     emoteImageView.setImageResource(R.drawable.kalm);
                     emoteTextView.setText("Calm");
+                    quoteTextView.setText(getString(R.string.calm_quote));
                     break;
                 case "Excited":
                     emoteImageView.setImageResource(R.drawable.excy);
                     emoteTextView.setText("Excited");
+                    quoteTextView.setText(getString(R.string.excited_quote));
                     break;
                 case "Disgust":
                     emoteImageView.setImageResource(R.drawable.disgy);
                     emoteTextView.setText("Disgust");
+                    quoteTextView.setText(getString(R.string.disgust_quote));
                     break;
                 case "In Love":
                     emoteImageView.setImageResource(R.drawable.inly);
                     emoteTextView.setText("In Love");
+                    quoteTextView.setText(getString(R.string.in_love_quote));
                     break;
                 case "Dissapointed":
                     emoteImageView.setImageResource(R.drawable.dissy);
-                    emoteTextView.setText("Dissapointed");
+                    emoteTextView.setText("Disappointed");
+                    quoteTextView.setText(getString(R.string.dissapointed_quote));
                     break;
                 case "Angry":
                     emoteImageView.setImageResource(R.drawable.angy);
                     emoteTextView.setText("Angry");
+                    quoteTextView.setText(getString(R.string.angry_quote));
                     break;
                 case "Anxious":
                     emoteImageView.setImageResource(R.drawable.anxy);
                     emoteTextView.setText("Anxious");
+                    quoteTextView.setText(getString(R.string.anxious_quote));
                     break;
                 // Add cases for other emotes
             }
         }
     }
+
 
 }

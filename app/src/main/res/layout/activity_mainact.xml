@@ -6,60 +6,77 @@
     android:layout_height="match_parent"
     tools:context=".MainAct">
 
-    <!-- drawable/btnstart.xml -->
+
+    <ImageView
+        android:id="@+id/btnsettings"
+        android:layout_width="40dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="355dp"
+        android:layout_marginBottom="678dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/setting" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="284dp"
-        android:layout_height="222dp"
-        android:src="@drawable/proper"
+        android:layout_width="388dp"
+        android:layout_height="354dp"
+        android:layout_marginBottom="215dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.172"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.611"
+        app:srcCompat="@drawable/logo" />
 
     <ImageView
-        android:id="@+id/btnquotes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="144dp"
-        android:src="@drawable/quotes"
+        android:id="@+id/btncalendar"
+        android:layout_width="289dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="553dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="110dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.629" />
+        app:srcCompat="@drawable/btncalendar" />
 
     <ImageView
-        android:id="@+id/btncalender"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/calendar"
+        android:id="@+id/btnfavqoutes"
+        android:layout_width="293dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="494dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="175dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.594" />
+        app:srcCompat="@drawable/favquotes" />
 
     <ImageView
         android:id="@+id/btnstart"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/start"
+        android:layout_width="291dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="425dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="237dp"
         android:clickable="true"
-        android:focusable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.512" />
+        app:srcCompat="@drawable/start" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
