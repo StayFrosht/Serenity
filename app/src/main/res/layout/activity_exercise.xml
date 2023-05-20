@@ -238,7 +238,7 @@
         app:layout_constraintVertical_bias="0.704" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/brdr1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -250,7 +250,7 @@
         app:srcCompat="@drawable/bdr1" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/brdr2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -262,7 +262,7 @@
         app:srcCompat="@drawable/bdr1" />
 
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/brdr3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -36,4 +36,5 @@ Based on the colors and emojis you\'ve chosen, it seems like you\'re feeling wor
     <string name="s_hold"><b>4s</b>\nHOLD</string>
     <string name="s_exhale"><b>6s</b>\nEXHALE</string>
     <string name="s_hold1"><b>2s</b>\nHOLD</string>
+    <string name="by_surround">By surrounding yourself with these colors you can expect a psychological boost as these colors affect how you take in everything.</string>
 </resources>

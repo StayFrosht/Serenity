@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCF0DC"
+    android:backgroundTint="#FCF0DC"
+    tools:context=".Surround">
+
+    <ImageButton
+        android:id="@+id/btnSetting4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02"
+        app:srcCompat="@drawable/_settings_1"
+        app:tint="#000000"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btnMenu4"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="#02FFFFFF"
+        android:contentDescription="@string/app_suggestion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02"
+        app:srcCompat="@drawable/menu_icon"
+        app:tint="#E9100D0D"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/btnBack4"
+        android:layout_width="19dp"
+        android:layout_height="41dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029"
+        app:srcCompat="@drawable/back1" />
+
+    <ImageButton
+        android:id="@+id/btnNnext4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.945"
+        app:srcCompat="@drawable/nnext"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/surround_yo"
+        android:layout_width="316dp"
+        android:layout_height="144dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="324dp"
+        android:gravity="top"
+        android:text="@string/surround_yo"
+        android:textAppearance="@style/surround_yo"
+        android:textSize="41sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <TextView
+        android:id="@+id/by_surround"
+        android:layout_width="316dp"
+        android:layout_height="161dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="top"
+        android:text="@string/by_surround"
+        android:textAppearance="@style/by_surround"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.763" />
+</androidx.constraintlayout.widget.ConstraintLayout>
