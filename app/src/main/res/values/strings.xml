@@ -19,4 +19,16 @@ Based on the colors and emojis you\'ve chosen, it seems like you\'re feeling wor
     <string name="title_activity_settings">Settings</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="every_chall"><b>"Every challenge you encounter in life is a fork in the road. You have the choice to choose which way to go - backward, forward, breakdown or breakthrough."</b>\n\n-Ifeanyi Enoch Onuoha
+</string>
+
+
+    <string name="quote_for_y">\Quote For You</string>
+    <string name="here_s_a_da">Here\'s a daily dose of motivation and wisdom to kickstart your day and fuel your dreams!\n</string>
+    <string name="suggestion"><strong>Suggestion</strong></string>
+    <string name="consider_ta">Consider taking a short walk outside to clear your mind and reduce stress. Even a few minutes can have a positive impact on your mood and provide much-needed clarity.</string>
+    <string name="app_suggestion" />
+    <string name="min_walk">10 min walk</string>
+
+
 </resources>
