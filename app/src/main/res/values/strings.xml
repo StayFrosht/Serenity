@@ -29,6 +29,11 @@ Based on the colors and emojis you\'ve chosen, it seems like you\'re feeling wor
     <string name="consider_ta">Consider taking a short walk outside to clear your mind and reduce stress. Even a few minutes can have a positive impact on your mood and provide much-needed clarity.</string>
     <string name="app_suggestion" />
     <string name="min_walk">10 min walk</string>
-
-
+    <string name="breathing_e"><b>Breathing Exercise</b></string>
+    <string name="surround_yo">Surround yourself with these colors!</string>
+    <string name="breathe"><b>Breathe</b></string>
+    <string name="s_inhale"><b>4s</b>\nINHALE</string>
+    <string name="s_hold"><b>4s</b>\nHOLD</string>
+    <string name="s_exhale"><b>6s</b>\nEXHALE</string>
+    <string name="s_hold1"><b>2s</b>\nHOLD</string>
 </resources>
