@@ -4,13 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Cover">
+    tools:context=".LoadingActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView2"
         android:layout_width="408dp"
         android:layout_height="773dp"
-        app:srcCompat="@drawable/bg"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="-21dp" />
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg" />
 </androidx.constraintlayout.widget.ConstraintLayout>
