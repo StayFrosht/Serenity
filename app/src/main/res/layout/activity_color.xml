@@ -7,7 +7,7 @@
     tools:context=".Color">
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/colorHeader"
         android:layout_width="344dp"
         android:layout_height="87dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -17,6 +17,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.024"
         app:srcCompat="@drawable/header" />
+
+    <ImageView
+        android:id="@+id/colorFooter"
+        android:layout_width="475dp"
+        android:layout_height="380dp"
+        android:layout_marginTop="351dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/qgdes2_2" />
 
     <ImageView
         android:id="@+id/redBox"
@@ -84,22 +96,11 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.729"
+        app:layout_constraintHorizontal_bias="0.73"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.67"
         app:srcCompat="@drawable/_bgyellow" />
-
-    <ImageView
-        android:id="@+id/imageView23"
-        android:layout_width="475dp"
-        android:layout_height="380dp"
-        android:layout_marginTop="351dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/qgdes2_2" />
 
     <ImageView
         android:id="@+id/redEmote"
@@ -167,7 +168,7 @@
         android:layout_height="109dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.73"
+        app:layout_constraintHorizontal_bias="0.727"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.673"

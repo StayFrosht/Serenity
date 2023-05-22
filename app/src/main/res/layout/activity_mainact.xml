@@ -8,59 +8,125 @@
 
 
     <ImageView
+        android:id="@+id/GrdntYellow"
+        android:layout_width="309dp"
+        android:layout_height="364dp"
+        android:layout_marginEnd="196dp"
+        android:layout_marginBottom="592dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/yippy" />
+
+    <ImageView
+        android:id="@+id/grdtTeel"
+        android:layout_width="508dp"
+        android:layout_height="705dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginBottom="368dp"
+        android:accessibilityLiveRegion="none"
+        android:accessibilityTraversalAfter="@id/null"
+        android:accessibilityTraversalBefore="@id/null"
+        android:adjustViewBounds="true"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/teel" />
+
+    <ImageView
+        android:id="@+id/grdtPink"
+        android:layout_width="561dp"
+        android:layout_height="610dp"
+        android:layout_marginTop="460dp"
+        android:layout_marginEnd="72dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pink" />
+
+    <ImageView
+        android:id="@+id/grdtPlue"
+        android:layout_width="400dp"
+        android:layout_height="372dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.536"
+        app:srcCompat="@drawable/plue" />
+
+    <ImageView
+        android:id="@+id/otlDblue"
+        android:layout_width="348dp"
+        android:layout_height="433dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginBottom="568dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/otl_des" />
+
+    <ImageView
+        android:id="@+id/otlDgreen"
+        android:layout_width="387dp"
+        android:layout_height="529dp"
+        android:layout_marginStart="-290dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/otl_desg" />
+
+    <ImageView
+        android:id="@+id/dPeach"
+        android:layout_width="318dp"
+        android:layout_height="448dp"
+        android:layout_marginTop="515dp"
+        android:layout_marginEnd="-190dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/peach" />
+
+    <ImageView
         android:id="@+id/btnsettings"
-        android:layout_width="40dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="355dp"
-        android:layout_marginBottom="678dp"
+        android:layout_width="30dp"
+        android:layout_height="29dp"
         android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/setting" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="388dp"
-        android:layout_height="354dp"
-        android:layout_marginBottom="215dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.611"
-        app:srcCompat="@drawable/logo" />
+        app:layout_constraintVertical_bias="0.02"
+        app:srcCompat="@drawable/setting"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <ImageView
         android:id="@+id/btncalendar"
-        android:layout_width="289dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="553dp"
-        android:layout_marginEnd="62dp"
-        android:layout_marginBottom="110dp"
+        android:layout_width="293dp"
+        android:layout_height="73dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.674"
         app:srcCompat="@drawable/btncalendar" />
 
     <ImageView
         android:id="@+id/btnfavqoutes"
         android:layout_width="293dp"
         android:layout_height="62dp"
-        android:layout_marginStart="58dp"
-        android:layout_marginTop="494dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginBottom="175dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.758"
         app:srcCompat="@drawable/favquotes" />
 
     <ImageView
@@ -74,9 +140,23 @@
         android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/start" />
+        app:layout_constraintVertical_bias="0.163"
+        app:srcCompat="@drawable/start"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="301dp"
+        android:layout_height="283dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.241"
+        app:srcCompat="@drawable/_slogo" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

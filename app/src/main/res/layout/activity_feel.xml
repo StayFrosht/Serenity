@@ -7,29 +7,47 @@
     tools:context=".Feel">
 
     <ImageView
-        android:id="@+id/back3"
-        android:layout_width="46dp"
-        android:layout_height="41dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/grdnt_bg"
+        android:layout_width="716dp"
+        android:layout_height="937dp"
+        android:layout_marginTop="-130dp"
+        android:layout_marginEnd="-150dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976"
-        app:srcCompat="@drawable/back1" />
+        app:srcCompat="@drawable/grdnt_bg" />
 
     <ImageView
-        android:id="@+id/btnCalm"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:id="@+id/imageView10"
+        android:layout_width="637dp"
+        android:layout_height="510dp"
+        android:layout_marginStart="-50dp"
+        android:layout_marginBottom="-350dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/brdr_des" />
+
+    <ImageView
+        android:id="@+id/brdr_dess"
+        android:layout_width="303dp"
+        android:layout_height="396dp"
+        android:layout_marginStart="-170dp"
+        android:layout_marginBottom="560dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/brdr_dess" />
+
+    <ImageView
+        android:id="@+id/back3"
+        android:layout_width="32dp"
+        android:layout_height="28dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.697"
+        app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAnxious"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/___img_calm" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019"
+        app:srcCompat="@drawable/back1" />
 
     <ImageView
         android:id="@+id/btnAnxious"
@@ -37,10 +55,10 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.697"
+        app:layout_constraintHorizontal_bias="0.713"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.144"
+        app:layout_constraintVertical_bias="0.203"
         app:srcCompat="@drawable/___img_anxious" />
 
     <ImageView
@@ -50,11 +68,23 @@
         android:layout_marginTop="28dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintHorizontal_bias="0.273"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnHappy"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/___img_sad" />
+
+    <ImageView
+        android:id="@+id/btnHappy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDisgust"
+        app:layout_constraintVertical_bias="0.098"
+        app:srcCompat="@drawable/___img_happy" />
 
     <ImageView
         android:id="@+id/btnExcited"
@@ -62,37 +92,23 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.697"
+        app:layout_constraintHorizontal_bias="0.713"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCalm"
-        app:layout_constraintVertical_bias="0.085"
+        app:layout_constraintVertical_bias="0.067"
         app:srcCompat="@drawable/___img_excited" />
 
     <ImageView
         android:id="@+id/btnDisgust"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="27dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintHorizontal_bias="0.273"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnDissapointed"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.067"
         app:srcCompat="@drawable/___img_disgust" />
-
-    <ImageView
-        android:id="@+id/btnHappy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="27dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnDisgust"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/___img_happy" />
 
     <ImageView
         android:id="@+id/btnInlove"
@@ -100,10 +116,10 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.697"
+        app:layout_constraintHorizontal_bias="0.713"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnExcited"
-        app:layout_constraintVertical_bias="0.142"
+        app:layout_constraintVertical_bias="0.098"
         app:srcCompat="@drawable/___img_inlove" />
 
     <ImageView
@@ -112,10 +128,10 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintHorizontal_bias="0.273"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.144"
+        app:layout_constraintVertical_bias="0.203"
         app:srcCompat="@drawable/___img_angry" />
 
     <ImageView
@@ -125,10 +141,10 @@
         android:layout_marginTop="28dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.697"
+        app:layout_constraintHorizontal_bias="0.713"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnInlove"
-        app:layout_constraintVertical_bias="0.029"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/___img_shy" />
 
     <ImageView
@@ -138,22 +154,36 @@
         android:layout_marginTop="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintHorizontal_bias="0.273"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnAngry"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/___img_disappointed" />
 
     <ImageView
-        android:id="@+id/imageView14"
+        android:id="@+id/btnCalm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintHorizontal_bias="0.713"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAnxious"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/___img_calm" />
+
+    <ImageView
+        android:id="@+id/headrr"
+        android:layout_width="326dp"
+        android:layout_height="90dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.024"
-        app:srcCompat="@drawable/how" />
+        app:layout_constraintVertical_bias="0.044"
+        app:srcCompat="@drawable/headrr" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
