@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FBF9F9"
     tools:context=".MainAct">
 
 
@@ -25,8 +26,6 @@
         android:layout_marginStart="112dp"
         android:layout_marginBottom="368dp"
         android:accessibilityLiveRegion="none"
-        android:accessibilityTraversalAfter="@id/null"
-        android:accessibilityTraversalBefore="@id/null"
         android:adjustViewBounds="true"
         android:background="#00FFFFFF"
         android:scaleType="centerInside"
@@ -106,57 +105,53 @@
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <ImageView
-        android:id="@+id/btncalendar"
-        android:layout_width="293dp"
-        android:layout_height="73dp"
+        android:id="@+id/imageView"
+        android:layout_width="224dp"
+        android:layout_height="232dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.674"
-        app:srcCompat="@drawable/btncalendar" />
-
-    <ImageView
-        android:id="@+id/btnfavqoutes"
-        android:layout_width="293dp"
-        android:layout_height="62dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.55"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.758"
-        app:srcCompat="@drawable/favquotes" />
+        app:layout_constraintVertical_bias="0.31"
+        app:srcCompat="@drawable/_slogo" />
 
     <ImageView
         android:id="@+id/btnstart"
-        android:layout_width="291dp"
-        android:layout_height="69dp"
-        android:layout_marginStart="58dp"
-        android:layout_marginTop="425dp"
-        android:layout_marginEnd="62dp"
-        android:layout_marginBottom="237dp"
+        android:layout_width="266dp"
+        android:layout_height="54dp"
         android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.163"
+        app:layout_constraintVertical_bias="0.598"
         app:srcCompat="@drawable/start"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="301dp"
-        android:layout_height="283dp"
+        android:id="@+id/btncalendar"
+        android:layout_width="264dp"
+        android:layout_height="57dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.676"
+        app:srcCompat="@drawable/btncalendar" />
+
+    <ImageView
+        android:id="@+id/btnfavqoutes"
+        android:layout_width="265dp"
+        android:layout_height="46dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.241"
-        app:srcCompat="@drawable/_slogo" />
+        app:layout_constraintVertical_bias="0.747"
+        app:srcCompat="@drawable/favquotes" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
