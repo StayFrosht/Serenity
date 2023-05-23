@@ -19,8 +19,7 @@ public class Color extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_color);
 
-        backgroundMusicIntent = new Intent(this, BackgroundMusicService.class);
-        startService(backgroundMusicIntent);
+
 
         String selectedValue = getIntent().getStringExtra("selectedValue");
 
@@ -86,7 +85,7 @@ public class Color extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish(); // Close the current activity and return to the previous page
+                finish();
             }
         });
 
@@ -119,7 +118,7 @@ public class Color extends AppCompatActivity {
                 case "Shy":
                     setEmoteImages(R.drawable.sh);
                     break;
-                case "Dissapointed":
+                case "Disappointed":
                     setEmoteImages(R.drawable.dissy);
                     break;
             }
@@ -129,7 +128,8 @@ public class Color extends AppCompatActivity {
     private void openComboActivity(String color, String emote) {
         Intent intent = new Intent(Color.this, Combo.class);
         intent.putExtra("color", color);
-        intent.putExtra("emote", emote); // Add this line to pass the "emote" value
+        intent.putExtra("emote", emote);
+
         startActivity(intent);
     }
 
@@ -142,7 +142,6 @@ public class Color extends AppCompatActivity {
         ImageView purpleEmote = findViewById(R.id.purpleEmote);
         ImageView yellowEmote = findViewById(R.id.yellowEmote);
 
-        // Set the image resource for each emote ImageView
         redEmote.setImageResource(resourceId);
         blueEmote.setImageResource(resourceId);
         greenEmote.setImageResource(resourceId);

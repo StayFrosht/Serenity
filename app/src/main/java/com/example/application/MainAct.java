@@ -27,7 +27,6 @@ public class MainAct extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_mainact);
 
-        // Set click listener for the "Start" ImageView
         ImageView btnStart = findViewById(R.id.btnstart);
         btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,13 +43,10 @@ public class MainAct extends AppCompatActivity {
             }
         });
 
-        // Initialize SharedPreferences
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
 
-        // Retrieve the background music setting from SharedPreferences
         isBackgroundMusicEnabled = sharedPreferences.getBoolean(Settings.PREF_KEY_BACKGROUND_MUSIC, true);
 
-        // Start or stop the background music service based on the retrieved setting
         if (isBackgroundMusicEnabled) {
             startBackgroundMusic();
         } else {

@@ -24,7 +24,6 @@ public class Feel extends AppCompatActivity implements View.OnClickListener {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_feel);
 
-        // Set click listeners for buttons
         findViewById(R.id.btnCalm).setOnClickListener(this);
         findViewById(R.id.btnAnxious).setOnClickListener(this);
         findViewById(R.id.btnSad).setOnClickListener(this);
@@ -40,16 +39,14 @@ public class Feel extends AppCompatActivity implements View.OnClickListener {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish(); // Close the current activity and return to the previous page
+                finish();
             }
         });
 
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
 
-        // Initialize backgroundMusicIntent
         backgroundMusicIntent = new Intent(this, BackgroundMusicService.class);
 
-        // Start or stop the background music service based on the preference value
         updateBackgroundMusicState();
     }
 
@@ -57,7 +54,6 @@ public class Feel extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View v) {
         String selectedValue = "";
 
-        // Determine the selected button and set the corresponding value
         switch (v.getId()) {
             case R.id.btnCalm:
                 selectedValue = "Calm";
@@ -91,16 +87,13 @@ public class Feel extends AppCompatActivity implements View.OnClickListener {
                 break;
         }
 
-        // Start Color activity and pass the selected value
         Intent intent = new Intent(Feel.this, Color.class);
         intent.putExtra("selectedValue", selectedValue);
         startActivity(intent);
     }
     private void updateBackgroundMusicState() {
-        // Get the background music preference value from SharedPreferences
         boolean isBackgroundMusicEnabled = sharedPreferences.getBoolean("PREF_KEY_BACKGROUND_MUSIC", true);
 
-        // Start or stop the background music service based on the preference value
         if (isBackgroundMusicEnabled) {
             startBackgroundMusic();
         } else {

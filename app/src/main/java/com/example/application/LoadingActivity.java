@@ -23,7 +23,7 @@ public class LoadingActivity extends AppCompatActivity {
             @Override
             public void run() {
                 startActivity(new Intent(LoadingActivity.this, MainAct.class));
-                finish(); // Optional, if you want to close the Loading activity
+                finish();
             }
         }, DELAY_DURATION);
     }

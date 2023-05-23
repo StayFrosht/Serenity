@@ -15,7 +15,27 @@ Based on the colors and emojis you\'ve chosen, it seems like you\'re feeling wor
     <string name="angry_quote">Based on the colors and emojis you\'ve chosen, it seems like you\'re feeling angry. Anger is a valid emotion, and it\'s important to acknowledge and understand it. Take a moment to reflect on the source of your anger and find healthy ways to express and manage it. Practice self-care, engage in activities that help you release tension, and seek support if needed. Remember that you deserve to have your emotions validated, and finding constructive ways to channel your anger can lead to personal growth and resolution of conflicts.</string>
     <string name="anxious_quote">Based on the colors and emojis you\'ve chosen, it seems like you\'re feeling anxious. Anxiety can be overwhelming, but remember that you have the strength to navigate through it. Take some time to identify the triggers of your anxiety and explore coping mechanisms that work best for you. Practice self-care, engage in relaxation techniques, and consider reaching out to a trusted friend or professional for support. Remember, it\'s okay to ask for help, and taking proactive steps to manage your anxiety can lead to a greater sense of peace and well-being.</string>
 
+    <string name="calm_suggestion">Consider taking a few moments to practice deep breathing and meditation. Find a quiet place where you can relax and let go of any stress.</string>
+    <string name="anxious_suggestion">Try writing down your thoughts and worries to help clear your mind. Engage in activities that bring you comfort and relaxation.</string>
+    <string name="sad_suggestion">Reach out to a trusted friend or family member for support. Engage in activities that bring you joy and allow yourself to feel your emotions.</string>
+    <string name="excited_suggestion">Channel your excitement into planning and taking action towards your goals. Embrace the positive energy and enjoy the anticipation.</string>
+    <string name="disgust_suggestion">Identify the triggers that cause discomfort and take steps to minimize your exposure to them. Surround yourself with positive influences and things that bring you happiness.</string>
+    <string name="happy_suggestion">Share your happiness with others and spread positivity. Engage in activities that uplift your mood and bring you joy.</string>
+    <string name="in_love_suggestion">Celebrate love by expressing your affection and gratitude towards your loved ones. Plan a special date or surprise to show your appreciation.</string>
+    <string name="angry_suggestion">Take a break and find a healthy outlet for your anger, such as physical exercise or deep breathing. Communicate your feelings assertively but calmly.</string>
+    <string name="shy_suggestion">Challenge yourself to step out of your comfort zone gradually. Practice self-acceptance and remind yourself that your voice matters.</string>
+    <string name="disappointed_suggestion">Acknowledge your disappointment and allow yourself to process the emotions. Seek support from others and explore alternative paths or opportunities.</string>
 
+    <string name="calm_task">Meditate for 10 minutes</string>
+    <string name="anxious_task">Take a 10-min walk</string>
+    <string name="sad_task">Listen to uplifting music</string>
+    <string name="excited_task">Create a to-do list</string>
+    <string name="disgust_task">Practice gratitude</string>
+    <string name="happy_task">Call a friend for a laugh</string>
+    <string name="in_love_task">Write a heartfelt message</string>
+    <string name="angry_task">Engage in physical activity</string>
+    <string name="shy_task">Strike up a conversation</string>
+    <string name="disappointed_task">Reflect and learn from it</string>
 
     <string name="title_activity_settings">Settings</string>
     <string name="dummy_button">Dummy Button</string>

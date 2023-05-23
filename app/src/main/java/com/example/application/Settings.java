@@ -45,27 +45,22 @@ public class Settings extends AppCompatActivity {
         bgMusicSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                // Save the state in SharedPreferences
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.putBoolean(PREF_KEY_BACKGROUND_MUSIC, isChecked);
                 editor.apply();
 
                 if (isChecked) {
-                    // Turn on the music
                     startBackgroundMusic();
                 } else {
-                    // Turn off the music
                     stopBackgroundMusic();
                 }
             }
         });
 
-        // Retrieve the state from SharedPreferences
         boolean isBackgroundMusicEnabled = sharedPreferences.getBoolean(PREF_KEY_BACKGROUND_MUSIC, true);
         bgMusicSwitch.setChecked(isBackgroundMusicEnabled);
 
         if (isBackgroundMusicEnabled) {
-            // Start the background music if it was previously enabled
             startBackgroundMusic();
         }
     }

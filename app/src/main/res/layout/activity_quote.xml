@@ -107,7 +107,7 @@
         app:srcCompat="@drawable/menu_icon" />
 
     <ImageButton
-        android:id="@+id/btnBkMark"
+        android:id="@+id/btnCopy"
         android:layout_width="43dp"
         android:layout_height="44dp"
         android:backgroundTint="#00FFFFFF"
@@ -170,7 +170,7 @@
         app:layout_constraintVertical_bias="0.727" />
 
     <ImageButton
-        android:id="@+id/btnNnext"
+        android:id="@+id/btnNext5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#00FFFFFF"

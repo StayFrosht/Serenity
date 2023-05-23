@@ -75,7 +75,7 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/btnNnext2"
+        android:id="@+id/btnNext2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#00FFFFFF"
@@ -132,7 +132,7 @@
         app:layout_constraintVertical_bias="0.222" />
 
     <TextView
-        android:id="@+id/consider_ta"
+        android:id="@+id/txtSuggestion"
         android:layout_width="241dp"
         android:layout_height="224dp"
         android:layout_alignParentLeft="true"
@@ -151,7 +151,7 @@
         app:layout_constraintVertical_bias="0.424" />
 
     <TextView
-        android:id="@+id/min_walk"
+        android:id="@+id/txtTask"
         android:layout_width="177dp"
         android:layout_height="30dp"
         android:layout_alignParentLeft="true"
@@ -159,15 +159,15 @@
         android:gravity="center_horizontal|top"
         android:letterSpacing="0.02"
         android:lineSpacingMultiplier="0.01"
-        android:text="@string/min_walk"
-        android:textAppearance="@style/min_walk"
+        android:text="10min"
+
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.351"
+        app:layout_constraintHorizontal_bias="0.401"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.73" />
+        app:layout_constraintVertical_bias="0.733" />
 
     <CheckBox
         android:id="@+id/checkBox"

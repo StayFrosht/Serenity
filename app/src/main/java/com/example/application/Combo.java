@@ -23,8 +23,7 @@ public class Combo extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_combo);
 
-        backgroundMusicIntent = new Intent(this, BackgroundMusicService.class);
-        startService(backgroundMusicIntent);
+
         // Retrieve the selected color and emote from the intent
         String color = getIntent().getStringExtra("color");
         String emote = getIntent().getStringExtra("emote");
@@ -38,15 +37,18 @@ public class Combo extends AppCompatActivity {
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Combo.this, com.example.application.Quote.class);
+                Intent intent = new Intent(Combo.this, Quote.class);
+                intent.putExtra("color", color);
+                intent.putExtra("emote", emote);
                 startActivity(intent);
             }
         });
+
         ImageView backButton = findViewById(R.id.btnBack5);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish(); // Close the current activity and return to the previous page
+                finish();
             }
         });
         ImageView btnMenu = findViewById(R.id.btnMenu5);
@@ -66,8 +68,14 @@ public class Combo extends AppCompatActivity {
             }
         });
 
-    }
 
+    }
+//    private void openSuggestionActivity(String color, String emote) {
+//        Intent intent = new Intent(Combo.this, Suggestion.class);
+//        intent.putExtra("selectedColor", color);
+//        intent.putExtra("selectedEmote", emote);
+//        startActivity(intent);
+//    }
     private void setComboBackgroundColor(String color) {
         View bg2 = findViewById(R.id.bg2);
         View bg3 = findViewById(R.id.bg3);
@@ -158,7 +166,7 @@ public class Combo extends AppCompatActivity {
                     emoteTextView.setText("Anxious");
                     quoteTextView.setText(getString(R.string.anxious_quote));
                     break;
-                // Add cases for other emotes
+
             }
         }
     }
