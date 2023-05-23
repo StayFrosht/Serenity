@@ -51,7 +51,7 @@
         app:srcCompat="@drawable/qoutemark" />
 
     <TextView
-        android:id="@+id/every_chall"
+        android:id="@+id/randQuote"
         android:layout_width="241dp"
         android:layout_height="138dp"
         android:layout_alignParentLeft="true"
@@ -115,10 +115,10 @@
         android:tint="#8C5FDC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintHorizontal_bias="0.883"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.192"
+        app:layout_constraintVertical_bias="0.18"
         app:srcCompat="@drawable/bookmark" />
 
     <ImageButton
@@ -129,10 +129,10 @@
         android:scaleType="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintHorizontal_bias="0.771"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.192"
+        app:layout_constraintVertical_bias="0.18"
         app:srcCompat="@drawable/savetofav" />
 
     <TextView

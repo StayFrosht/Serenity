@@ -7,6 +7,56 @@
     android:background="#0FFFFFFF"
     tools:context=".Combo">
 
+    <ImageButton
+        android:id="@+id/btnMenu5"
+        android:layout_width="34dp"
+        android:layout_height="40dp"
+        android:background="#02FFFFFF"
+        android:tint="#E9100D0D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02"
+        app:srcCompat="@drawable/menu_icon" />
+
+    <ImageButton
+        android:id="@+id/btnSetting5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:tint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02"
+        app:srcCompat="@drawable/_settings_1" />
+
+    <ImageView
+        android:id="@+id/quoteBordertop2"
+        android:layout_width="391dp"
+        android:layout_height="296dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="668dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/qg_des1" />
+
+    <ImageView
+        android:id="@+id/btnBack5"
+        android:layout_width="19dp"
+        android:layout_height="41dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019"
+        app:srcCompat="@drawable/back1" />
+
     <ImageView
         android:id="@+id/back2"
         android:layout_width="46dp"

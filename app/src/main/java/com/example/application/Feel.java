@@ -1,7 +1,9 @@
 package com.example.application;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -10,8 +12,10 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Feel extends AppCompatActivity implements View.OnClickListener {
+
     private Intent backgroundMusicIntent;
-    private boolean isFinishing = false;
+    private SharedPreferences sharedPreferences;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,7 +23,6 @@ public class Feel extends AppCompatActivity implements View.OnClickListener {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_feel);
-
 
         // Set click listeners for buttons
         findViewById(R.id.btnCalm).setOnClickListener(this);
@@ -37,13 +40,17 @@ public class Feel extends AppCompatActivity implements View.OnClickListener {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                isFinishing = true; // Set the flag to indicate activity is being finished
                 finish(); // Close the current activity and return to the previous page
             }
         });
 
+        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+
+        // Initialize backgroundMusicIntent
         backgroundMusicIntent = new Intent(this, BackgroundMusicService.class);
-        startService(backgroundMusicIntent);
+
+        // Start or stop the background music service based on the preference value
+        updateBackgroundMusicState();
     }
 
     @Override
@@ -80,7 +87,7 @@ public class Feel extends AppCompatActivity implements View.OnClickListener {
                 selectedValue = "Shy";
                 break;
             case R.id.btnDissapointed:
-                selectedValue = "Dissapointed";
+                selectedValue = "Disappointed";
                 break;
         }
 
@@ -88,6 +95,31 @@ public class Feel extends AppCompatActivity implements View.OnClickListener {
         Intent intent = new Intent(Feel.this, Color.class);
         intent.putExtra("selectedValue", selectedValue);
         startActivity(intent);
+    }
+    private void updateBackgroundMusicState() {
+        // Get the background music preference value from SharedPreferences
+        boolean isBackgroundMusicEnabled = sharedPreferences.getBoolean("PREF_KEY_BACKGROUND_MUSIC", true);
+
+        // Start or stop the background music service based on the preference value
+        if (isBackgroundMusicEnabled) {
+            startBackgroundMusic();
+        } else {
+            stopBackgroundMusic();
+        }
+    }
+
+    private void startBackgroundMusic() {
+        if (backgroundMusicIntent == null) {
+            backgroundMusicIntent = new Intent(this, BackgroundMusicService.class);
+            startService(backgroundMusicIntent);
+        }
+    }
+
+    private void stopBackgroundMusic() {
+        if (backgroundMusicIntent != null) {
+            stopService(backgroundMusicIntent);
+            backgroundMusicIntent = null;
+        }
     }
 
 

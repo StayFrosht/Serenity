@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="quotes">
+        <item>"The only way to do great work is to love what you do." - Steve Jobs</item>
+        <item>"Believe you can and you're halfway there." - Theodore Roosevelt</item>
+        <item>"Success is not final, failure is not fatal: It is the courage to continue that counts." - Winston Churchill</item>
+        <item>"The future belongs to those who believe in the beauty of their dreams." - Eleanor Roosevelt</item>
+        <item>"Don't watch the clock; do what it does. Keep going." - Sam Levenson</item>
+        <item>"The only limit to our realization of tomorrow will be our doubts of today." - Franklin D. Roosevelt</item>
+        <item>"In the middle of every difficulty lies opportunity." - Albert Einstein</item>
+        <item>"Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful." - Albert Schweitzer</item>
+        <item>"The best way to predict the future is to create it." - Peter Drucker</item>
+        <item>"The future depends on what you do today." - Mahatma Gandhi</item>
+    </string-array>
+</resources>

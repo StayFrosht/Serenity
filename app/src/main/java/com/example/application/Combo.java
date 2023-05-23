@@ -34,12 +34,35 @@ public class Combo extends AppCompatActivity {
 
         // Update the emote image and text
         setEmote(emote);
-
-        ImageView backButton = findViewById(R.id.back2);
+        ImageView btnNext = findViewById(R.id.btnNext);
+        btnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Combo.this, com.example.application.Quote.class);
+                startActivity(intent);
+            }
+        });
+        ImageView backButton = findViewById(R.id.btnBack5);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish(); // Close the current activity and return to the previous page
+            }
+        });
+        ImageView btnMenu = findViewById(R.id.btnMenu5);
+        btnMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Combo.this, com.example.application.MainAct.class);
+                startActivity(intent);
+            }
+        });
+        ImageView btnSettings = findViewById(R.id.btnSetting5);
+        btnSettings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Combo.this, com.example.application.Settings.class);
+                startActivity(intent);
             }
         });
 
