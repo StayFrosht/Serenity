@@ -8,81 +8,161 @@
 
 
     <ImageView
+        android:id="@+id/grdnt2"
+        android:layout_width="960dp"
+        android:layout_height="924dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/grdnt_bg" />
+
+    <ImageView
         android:id="@+id/btnback"
-        android:layout_width="47dp"
-        android:layout_height="43dp"
+        android:layout_width="25dp"
+        android:layout_height="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintHorizontal_bias="0.065"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.039"
+        app:layout_constraintVertical_bias="0.034"
         app:srcCompat="@drawable/bakz" />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="469dp"
-        android:layout_height="143dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/sets" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="283dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="7dp"
-        android:layout_marginEnd="91dp"
+    <TextView
+        android:id="@+id/txtSett"
+        android:layout_width="198dp"
+        android:layout_height="66dp"
+        android:fontFamily="@font/inter_bold"
+        android:foregroundTint="#000000"
+        android:text="Settings"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="42sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintHorizontal_bias="0.117"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.214"
-        app:srcCompat="@drawable/dailynotif" />
+        app:layout_constraintVertical_bias="0.101" />
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="257dp"
-        android:layout_height="91dp"
-        android:layout_marginStart="7dp"
-        android:layout_marginEnd="108dp"
+    <TextView
+        android:id="@+id/txtDaily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Daily Notification"
+        android:textColor="#000000"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintHorizontal_bias="0.238"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.364"
-        app:srcCompat="@drawable/bgmusic" />
+        app:layout_constraintVertical_bias="0.218" />
+
+    <TextView
+        android:id="@+id/txtDailysub"
+        android:layout_width="214dp"
+        android:layout_height="62dp"
+        android:fontFamily="@font/inter_regular"
+        android:text="Allows you to stay informed and receive timely updates on important events, news, or changes. "
+        android:textColor="#536370"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.324"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.261" />
+
+    <TextView
+        android:id="@+id/txtBGM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Background Music"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.251"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.344" />
+
+    <TextView
+        android:id="@+id/txtBGMsub"
+        android:layout_width="203dp"
+        android:layout_height="53dp"
+        android:fontFamily="@font/inter_regular"
+        android:text="Relaxing Background Music on and off the App."
+        android:textColor="#536370"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.305"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.388" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.224"
+        app:srcCompat="@drawable/notif" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.348"
+        app:srcCompat="@drawable/music" />
 
     <Switch
         android:id="@+id/switch1"
-        style="@style/SwitchStyle"
-        android:layout_width="52dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="311dp"
-        android:layout_marginEnd="48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.887"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.381" />
+        app:layout_constraintVertical_bias="0.342"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Switch
         android:id="@+id/switch2"
-        style="@style/SwitchStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:switchTextAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textAlignment="textStart"
-        android:textSize="8sp"
-        android:thumbTint="#9AC3E3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintHorizontal_bias="0.887"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.221" />
+        app:layout_constraintVertical_bias="0.217"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="692dp"
+        android:layout_height="731dp"
+        android:layout_marginStart="-380dp"
+        android:layout_marginTop="-450dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/teel" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

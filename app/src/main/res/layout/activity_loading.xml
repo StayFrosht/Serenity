@@ -8,14 +8,33 @@
     tools:context=".LoadingActivity">
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="408dp"
-        android:layout_height="773dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="2dp"
+        android:id="@+id/grdnt1"
+        android:layout_width="586dp"
+        android:layout_height="578dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="-50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/grdnt_bg" />
+
+    <ImageView
+        android:id="@+id/grdnt"
+        android:layout_width="586dp"
+        android:layout_height="578dp"
+        android:layout_marginBottom="604dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/grdnt_bg" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="351dp"
+        android:layout_height="362dp"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bg" />
+        app:srcCompat="@drawable/splash" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
