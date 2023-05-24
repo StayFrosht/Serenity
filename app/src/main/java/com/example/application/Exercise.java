@@ -10,6 +10,9 @@ import android.os.Handler;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.view.animation.AlphaAnimation;
+import android.view.animation.Animation;
+import android.view.animation.AnimationSet;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -43,6 +46,8 @@ public class Exercise extends AppCompatActivity {
         holdTextView = findViewById(R.id.Hold);
         exhaleTextView = findViewById(R.id.Exhale);
         hold2TextView = findViewById(R.id.Hold2);
+
+
 
         ImageView btnMenu = findViewById(R.id.btnMenu3);
         btnMenu.setOnClickListener(new View.OnClickListener() {
@@ -80,8 +85,11 @@ public class Exercise extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // Initialize the handler
         handler = new Handler();
 
+        // Create the color transition runnable
         colorRunnable = new Runnable() {
             @Override
             public void run() {
@@ -117,9 +125,8 @@ public class Exercise extends AppCompatActivity {
             }
         };
 
-// Start the color transition
+        // Start the color transition loop
         handler.post(colorRunnable);
-
     }
 
     private void animateBackgroundColor(final View view, int startColor, int endColor, long duration, final int originalColor) {
@@ -134,7 +141,6 @@ public class Exercise extends AppCompatActivity {
         });
         animator.start();
     }
-
 
     @Override
     protected void onDestroy() {

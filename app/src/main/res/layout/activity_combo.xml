@@ -12,7 +12,7 @@
         android:layout_width="34dp"
         android:layout_height="40dp"
         android:background="#02FFFFFF"
-        android:tint="#E9100D0D"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.83"
@@ -26,7 +26,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#FFFFFF"
-        android:tint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.954"
@@ -72,10 +71,11 @@
 
     <View
         android:id="@+id/bg2"
-        android:layout_width="91dp"
-        android:layout_height="94dp"
+        android:layout_width="89dp"
+        android:layout_height="95dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+
         android:background="@drawable/rounded_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
