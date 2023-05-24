@@ -46,6 +46,20 @@ public class Quote extends AppCompatActivity {
         String randomQuote = getRandomQuote();
         randQuoteTextView.setText(randomQuote);
 
+
+        ImageView btnCopy = findViewById(R.id.btnCopy);
+        btnCopy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Copy the quote to the clipboard
+                ClipboardManager clipboardManager = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+                ClipData clipData = ClipData.newPlainText("Quote", randomQuote);
+                clipboardManager.setPrimaryClip(clipData);
+
+                // Show a toast message indicating that the quote is copied
+                Toast.makeText(Quote.this, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+            }
+        });
         ImageButton btnHeart = findViewById(R.id.btnHeart);
         btnHeart.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,6 +69,7 @@ public class Quote extends AppCompatActivity {
 
                 if (currentFilter == null) {
                     btnHeart.setColorFilter(redColor);
+                    saveQuote(randomQuote);
                 } else {
                     btnHeart.clearColorFilter();
                 }
@@ -90,6 +105,13 @@ public class Quote extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Quote.this, com.example.application.Settings.class);
                 startActivity(intent);
+            }
+        });
+        ImageView backButton = findViewById(R.id.btnBack);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
     }

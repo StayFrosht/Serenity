@@ -169,7 +169,7 @@
         app:layout_constraintVertical_bias="0.423" />
 
     <TextView
-        android:id="@+id/s_exhale"
+        android:id="@+id/Exhale"
         android:layout_width="88dp"
         android:layout_height="58dp"
         android:layout_alignParentLeft="true"
@@ -180,13 +180,13 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/peachBG"
-        app:layout_constraintHorizontal_bias="0.613"
+        app:layout_constraintHorizontal_bias="0.656"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.705" />
+        app:layout_constraintVertical_bias="0.707" />
 
     <TextView
-        android:id="@+id/s_hold"
+        android:id="@+id/Hold"
         android:layout_width="67dp"
         android:layout_height="57dp"
         android:layout_alignParentLeft="true"
@@ -197,13 +197,13 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.404"
+        app:layout_constraintHorizontal_bias="0.38"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.704" />
 
     <TextView
-        android:id="@+id/s_hold1"
+        android:id="@+id/Hold2"
         android:layout_width="79dp"
         android:layout_height="58dp"
         android:layout_alignParentLeft="true"
@@ -220,7 +220,7 @@
         app:layout_constraintVertical_bias="0.705" />
 
     <TextView
-        android:id="@+id/s_inhale"
+        android:id="@+id/Inhale"
         android:layout_width="89dp"
         android:layout_height="57dp"
         android:layout_alignParentLeft="true"
@@ -228,11 +228,12 @@
         android:gravity="center_horizontal|top"
         android:letterSpacing="0.00"
         android:text="@string/s_inhale"
+
         android:textAppearance="@style/s_inhale"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintHorizontal_bias="0.108"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.704" />
@@ -243,10 +244,10 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.338"
+        app:layout_constraintHorizontal_bias="0.296"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.698"
+        app:layout_constraintVertical_bias="0.697"
         app:srcCompat="@drawable/bdr1" />
 
     <ImageView
