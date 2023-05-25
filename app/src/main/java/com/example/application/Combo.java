@@ -151,7 +151,7 @@ public class Combo extends AppCompatActivity {
                     emoteTextView.setText("In Love");
                     quoteTextView.setText(getString(R.string.in_love_quote));
                     break;
-                case "Disappointed":
+                case "Dissapointed":
                     emoteImageView.setImageResource(R.drawable.dissy);
                     emoteTextView.setText("Disappointed");
                     quoteTextView.setText(getString(R.string.dissapointed_quote));

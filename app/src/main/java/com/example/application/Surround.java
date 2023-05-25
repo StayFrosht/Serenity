@@ -90,7 +90,7 @@ public class Surround extends AppCompatActivity {
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Surround.this, Bookmark.class);
+                Intent intent = new Intent(Surround.this, Surround.class);
                 intent.putExtra("color", color);
                 intent.putExtra("emote", emote);
                 startActivity(intent);

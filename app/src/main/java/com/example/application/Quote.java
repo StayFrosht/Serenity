@@ -121,7 +121,6 @@ public class Quote extends AppCompatActivity {
         int index = random.nextInt(quotes.length);
         return quotes[index];
     }
-
     private void saveQuote(String quote) {
         sharedPreferences = getSharedPreferences("MyFavorites", MODE_PRIVATE);
         savedQuotesCount = sharedPreferences.getInt("savedQuotesCount", 0);
@@ -131,7 +130,5 @@ public class Quote extends AppCompatActivity {
         editor.putString(quoteKey, quote);
         editor.putInt("savedQuotesCount", savedQuotesCount);
         editor.apply();
-
-
     }
 }

@@ -22,7 +22,7 @@
         android:layout_width="637dp"
         android:layout_height="510dp"
         android:layout_marginStart="-50dp"
-        android:layout_marginBottom="-350dp"
+        android:layout_marginBottom="-367dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/brdr_des" />
@@ -40,14 +40,14 @@
 
     <ImageView
         android:id="@+id/back3"
-        android:layout_width="32dp"
-        android:layout_height="28dp"
+        android:layout_width="19dp"
+        android:layout_height="41dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintHorizontal_bias="0.042"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.019"
+        app:layout_constraintVertical_bias="0.008"
         app:srcCompat="@drawable/back1" />
 
     <ImageView
